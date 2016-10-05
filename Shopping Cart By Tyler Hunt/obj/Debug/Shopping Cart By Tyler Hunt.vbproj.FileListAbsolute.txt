@@ -1,0 +1,14 @@
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.exe.config
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.exe
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.pdb
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.xml
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.vbprojResolveAssemblyReference.cache
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_Main.resources
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.Resources.resources
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.vbproj.GenerateResource.Cache
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.exe
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.xml
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.pdb
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_About.resources
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_AudioBooks.resources
+Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_PrintBooks.resources
