@@ -10,26 +10,29 @@
 
     Private Sub btn_AddPrintBook_Sub_Click(sender As Object, e As EventArgs) Handles btn_AddPrintBook_Sub.Click
 
-        'Get index value from list
-        Dim index = Me.lb_PrintBookItems_Sub.SelectedIndex
-        'Get text string form form
-        Dim TextString = Me.lb_PrintBookItems_Sub.SelectedItem
+
+        Dim index = Me.lb_PrintBookItems_Sub.SelectedIndex                  'Get index value from Print form list
+        Dim selectedCost As Decimal                                              'Holds added cost value
+        Dim TextString = Me.lb_PrintBookItems_Sub.SelectedItem              'Get text string form form
 
         If index <> -1 Then
+
             'Place text string in main form
             My.Forms.frm_Main.lb_SelectedList.Items.Add(TextString)
 
+            'Get & set the addCost value from module Array
+            selectedCost = gDec_PricesArray(index)
 
+            'Add cost to List using the selected index from list
+            SelectCostList.Add(selectedCost)
 
-            costList.Add(13.5D)
         End If
 
+        'Clear marked item once it is added
         Me.lb_PrintBookItems_Sub.ClearSelected()
 
-        For i As Integer = 0 To costList.Count - 1
-
-            MsgBox(costList(i).ToString() & vbNewLine)
-        Next
+        'Update Subtotal in mainForm
+        updateCostSummary()
 
     End Sub
 
