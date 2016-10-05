@@ -6,16 +6,6 @@
     End Sub
 
     Private Sub PrintBooksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintBooksToolStripMenuItem.Click
-        'frm_PrintBooks.ShowDialog()
-
-        'Dim printForm As New frm_PrintBooks
-        'printForm.ShowDialog(Me)
-
-        'Dim index = Me.lb_SelectedList.SelectedIndex
-        ''printForm.Close()
-
-        'MsgBox("Index is :" & index)
-
         frm_PrintBooks.Show()
     End Sub
 
