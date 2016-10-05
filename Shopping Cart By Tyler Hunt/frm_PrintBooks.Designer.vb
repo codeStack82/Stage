@@ -32,9 +32,11 @@ Partial Class frm_PrintBooks
         'gb_PrintBooks_Sub
         '
         Me.gb_PrintBooks_Sub.Controls.Add(Me.lb_PrintBookItems_Sub)
-        Me.gb_PrintBooks_Sub.Location = New System.Drawing.Point(29, 42)
+        Me.gb_PrintBooks_Sub.Location = New System.Drawing.Point(14, 22)
+        Me.gb_PrintBooks_Sub.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.gb_PrintBooks_Sub.Name = "gb_PrintBooks_Sub"
-        Me.gb_PrintBooks_Sub.Size = New System.Drawing.Size(568, 322)
+        Me.gb_PrintBooks_Sub.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gb_PrintBooks_Sub.Size = New System.Drawing.Size(284, 167)
         Me.gb_PrintBooks_Sub.TabIndex = 0
         Me.gb_PrintBooks_Sub.TabStop = False
         Me.gb_PrintBooks_Sub.Text = "Select a Print Book"
@@ -42,41 +44,47 @@ Partial Class frm_PrintBooks
         'lb_PrintBookItems_Sub
         '
         Me.lb_PrintBookItems_Sub.FormattingEnabled = True
-        Me.lb_PrintBookItems_Sub.ItemHeight = 25
         Me.lb_PrintBookItems_Sub.Items.AddRange(New Object() {"I Did It Your Way                             $11.95", "The History of Scottland                 $14.50", "Learn Calculus in One Day              $29.50", "Feel the Stress                                $18.50"})
-        Me.lb_PrintBookItems_Sub.Location = New System.Drawing.Point(22, 42)
+        Me.lb_PrintBookItems_Sub.Location = New System.Drawing.Point(11, 22)
+        Me.lb_PrintBookItems_Sub.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lb_PrintBookItems_Sub.Name = "lb_PrintBookItems_Sub"
-        Me.lb_PrintBookItems_Sub.Size = New System.Drawing.Size(528, 254)
+        Me.lb_PrintBookItems_Sub.Size = New System.Drawing.Size(266, 134)
         Me.lb_PrintBookItems_Sub.TabIndex = 0
         '
         'btn_AddPrintBook_Sub
         '
-        Me.btn_AddPrintBook_Sub.Location = New System.Drawing.Point(29, 388)
+        Me.btn_AddPrintBook_Sub.Location = New System.Drawing.Point(14, 202)
+        Me.btn_AddPrintBook_Sub.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_AddPrintBook_Sub.Name = "btn_AddPrintBook_Sub"
-        Me.btn_AddPrintBook_Sub.Size = New System.Drawing.Size(200, 67)
+        Me.btn_AddPrintBook_Sub.Size = New System.Drawing.Size(100, 35)
         Me.btn_AddPrintBook_Sub.TabIndex = 1
         Me.btn_AddPrintBook_Sub.Text = "Add Book to Cart"
         Me.btn_AddPrintBook_Sub.UseVisualStyleBackColor = True
         '
         'btn_PrintFrmClose_Sub
         '
-        Me.btn_PrintFrmClose_Sub.Location = New System.Drawing.Point(397, 388)
+        Me.btn_PrintFrmClose_Sub.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_PrintFrmClose_Sub.Location = New System.Drawing.Point(198, 202)
+        Me.btn_PrintFrmClose_Sub.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_PrintFrmClose_Sub.Name = "btn_PrintFrmClose_Sub"
-        Me.btn_PrintFrmClose_Sub.Size = New System.Drawing.Size(200, 67)
+        Me.btn_PrintFrmClose_Sub.Size = New System.Drawing.Size(100, 35)
         Me.btn_PrintFrmClose_Sub.TabIndex = 2
         Me.btn_PrintFrmClose_Sub.Text = "Close"
         Me.btn_PrintFrmClose_Sub.UseVisualStyleBackColor = True
         '
         'frm_PrintBooks
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AcceptButton = Me.btn_AddPrintBook_Sub
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(624, 479)
+        Me.CancelButton = Me.btn_PrintFrmClose_Sub
+        Me.ClientSize = New System.Drawing.Size(317, 266)
         Me.Controls.Add(Me.btn_PrintFrmClose_Sub)
         Me.Controls.Add(Me.btn_AddPrintBook_Sub)
         Me.Controls.Add(Me.gb_PrintBooks_Sub)
-        Me.MaximumSize = New System.Drawing.Size(650, 550)
-        Me.MinimumSize = New System.Drawing.Size(650, 550)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximumSize = New System.Drawing.Size(333, 304)
+        Me.MinimumSize = New System.Drawing.Size(333, 304)
         Me.Name = "frm_PrintBooks"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Print Books"

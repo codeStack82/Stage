@@ -22,26 +22,28 @@ Partial Class frm_Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.mnuStrip_Main = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProductsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetCtrlRToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitCtrlQToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProductsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PrintBooksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AudioBooksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.gb_SelectedProducts = New System.Windows.Forms.GroupBox()
+        Me.btn_Remove = New System.Windows.Forms.Button()
+        Me.txt_Total = New System.Windows.Forms.TextBox()
+        Me.txt_Shipping = New System.Windows.Forms.TextBox()
+        Me.txt_Tax = New System.Windows.Forms.TextBox()
+        Me.txt_SubTotal = New System.Windows.Forms.TextBox()
+        Me.lbl_Totasl = New System.Windows.Forms.Label()
+        Me.lbl_Shipping = New System.Windows.Forms.Label()
+        Me.lbl_Tax = New System.Windows.Forms.Label()
+        Me.lbl_SubTotal = New System.Windows.Forms.Label()
         Me.lb_SelectedList = New System.Windows.Forms.ListBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.tt_MainFrm = New System.Windows.Forms.ToolTip(Me.components)
         Me.mnuStrip_Main.SuspendLayout()
         Me.gb_SelectedProducts.SuspendLayout()
         Me.SuspendLayout()
@@ -52,7 +54,8 @@ Partial Class frm_Main
         Me.mnuStrip_Main.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ProductsToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.mnuStrip_Main.Location = New System.Drawing.Point(0, 0)
         Me.mnuStrip_Main.Name = "mnuStrip_Main"
-        Me.mnuStrip_Main.Size = New System.Drawing.Size(1082, 40)
+        Me.mnuStrip_Main.Padding = New System.Windows.Forms.Padding(3, 1, 0, 1)
+        Me.mnuStrip_Main.Size = New System.Drawing.Size(541, 24)
         Me.mnuStrip_Main.TabIndex = 0
         Me.mnuStrip_Main.Text = "MenuStrip1"
         '
@@ -60,173 +63,186 @@ Partial Class frm_Main
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ResetCtrlRToolStripMenuItem, Me.ExitCtrlQToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(64, 38)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 22)
         Me.FileToolStripMenuItem.Text = "&File"
-        '
-        'ProductsToolStripMenuItem
-        '
-        Me.ProductsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintBooksToolStripMenuItem, Me.AudioBooksToolStripMenuItem})
-        Me.ProductsToolStripMenuItem.Name = "ProductsToolStripMenuItem"
-        Me.ProductsToolStripMenuItem.Size = New System.Drawing.Size(119, 38)
-        Me.ProductsToolStripMenuItem.Text = "&Products"
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(77, 38)
-        Me.HelpToolStripMenuItem.Text = "&Help"
         '
         'ResetCtrlRToolStripMenuItem
         '
         Me.ResetCtrlRToolStripMenuItem.Name = "ResetCtrlRToolStripMenuItem"
-        Me.ResetCtrlRToolStripMenuItem.Size = New System.Drawing.Size(314, 38)
+        Me.ResetCtrlRToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ResetCtrlRToolStripMenuItem.Text = "Reset          Ctrl+R"
         '
         'ExitCtrlQToolStripMenuItem
         '
         Me.ExitCtrlQToolStripMenuItem.Name = "ExitCtrlQToolStripMenuItem"
-        Me.ExitCtrlQToolStripMenuItem.Size = New System.Drawing.Size(314, 38)
+        Me.ExitCtrlQToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ExitCtrlQToolStripMenuItem.Text = "Exit             Ctrl+Q"
+        '
+        'ProductsToolStripMenuItem
+        '
+        Me.ProductsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintBooksToolStripMenuItem, Me.AudioBooksToolStripMenuItem})
+        Me.ProductsToolStripMenuItem.Name = "ProductsToolStripMenuItem"
+        Me.ProductsToolStripMenuItem.Size = New System.Drawing.Size(66, 22)
+        Me.ProductsToolStripMenuItem.Text = "&Products"
         '
         'PrintBooksToolStripMenuItem
         '
         Me.PrintBooksToolStripMenuItem.Name = "PrintBooksToolStripMenuItem"
-        Me.PrintBooksToolStripMenuItem.Size = New System.Drawing.Size(269, 38)
+        Me.PrintBooksToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.PrintBooksToolStripMenuItem.Text = "&Print Books"
         '
         'AudioBooksToolStripMenuItem
         '
         Me.AudioBooksToolStripMenuItem.Name = "AudioBooksToolStripMenuItem"
-        Me.AudioBooksToolStripMenuItem.Size = New System.Drawing.Size(269, 38)
+        Me.AudioBooksToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.AudioBooksToolStripMenuItem.Text = "&Audio Books"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 22)
+        Me.HelpToolStripMenuItem.Text = "&Help"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(269, 38)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "&About"
         '
         'gb_SelectedProducts
         '
-        Me.gb_SelectedProducts.Controls.Add(Me.Button1)
-        Me.gb_SelectedProducts.Controls.Add(Me.TextBox4)
-        Me.gb_SelectedProducts.Controls.Add(Me.TextBox3)
-        Me.gb_SelectedProducts.Controls.Add(Me.TextBox2)
-        Me.gb_SelectedProducts.Controls.Add(Me.TextBox1)
-        Me.gb_SelectedProducts.Controls.Add(Me.Label4)
-        Me.gb_SelectedProducts.Controls.Add(Me.Label3)
-        Me.gb_SelectedProducts.Controls.Add(Me.Label2)
-        Me.gb_SelectedProducts.Controls.Add(Me.Label1)
+        Me.gb_SelectedProducts.Controls.Add(Me.btn_Remove)
+        Me.gb_SelectedProducts.Controls.Add(Me.txt_Total)
+        Me.gb_SelectedProducts.Controls.Add(Me.txt_Shipping)
+        Me.gb_SelectedProducts.Controls.Add(Me.txt_Tax)
+        Me.gb_SelectedProducts.Controls.Add(Me.txt_SubTotal)
+        Me.gb_SelectedProducts.Controls.Add(Me.lbl_Totasl)
+        Me.gb_SelectedProducts.Controls.Add(Me.lbl_Shipping)
+        Me.gb_SelectedProducts.Controls.Add(Me.lbl_Tax)
+        Me.gb_SelectedProducts.Controls.Add(Me.lbl_SubTotal)
         Me.gb_SelectedProducts.Controls.Add(Me.lb_SelectedList)
-        Me.gb_SelectedProducts.Location = New System.Drawing.Point(12, 62)
+        Me.gb_SelectedProducts.Location = New System.Drawing.Point(6, 32)
+        Me.gb_SelectedProducts.Margin = New System.Windows.Forms.Padding(2)
         Me.gb_SelectedProducts.Name = "gb_SelectedProducts"
-        Me.gb_SelectedProducts.Size = New System.Drawing.Size(1050, 514)
+        Me.gb_SelectedProducts.Padding = New System.Windows.Forms.Padding(2)
+        Me.gb_SelectedProducts.Size = New System.Drawing.Size(525, 270)
         Me.gb_SelectedProducts.TabIndex = 1
         Me.gb_SelectedProducts.TabStop = False
         Me.gb_SelectedProducts.Text = "Products Selected"
         '
+        'btn_Remove
+        '
+        Me.btn_Remove.Location = New System.Drawing.Point(8, 244)
+        Me.btn_Remove.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_Remove.Name = "btn_Remove"
+        Me.btn_Remove.Size = New System.Drawing.Size(100, 26)
+        Me.btn_Remove.TabIndex = 9
+        Me.btn_Remove.Text = "Remove"
+        Me.tt_MainFrm.SetToolTip(Me.btn_Remove, "Click to remove the selected  item from the Products List above.")
+        Me.btn_Remove.UseVisualStyleBackColor = True
+        '
+        'txt_Total
+        '
+        Me.txt_Total.Enabled = False
+        Me.txt_Total.Location = New System.Drawing.Point(418, 148)
+        Me.txt_Total.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_Total.Name = "txt_Total"
+        Me.txt_Total.Size = New System.Drawing.Size(98, 20)
+        Me.txt_Total.TabIndex = 8
+        '
+        'txt_Shipping
+        '
+        Me.txt_Shipping.Enabled = False
+        Me.txt_Shipping.Location = New System.Drawing.Point(418, 113)
+        Me.txt_Shipping.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_Shipping.Name = "txt_Shipping"
+        Me.txt_Shipping.Size = New System.Drawing.Size(98, 20)
+        Me.txt_Shipping.TabIndex = 7
+        '
+        'txt_Tax
+        '
+        Me.txt_Tax.Enabled = False
+        Me.txt_Tax.Location = New System.Drawing.Point(418, 72)
+        Me.txt_Tax.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_Tax.Name = "txt_Tax"
+        Me.txt_Tax.Size = New System.Drawing.Size(98, 20)
+        Me.txt_Tax.TabIndex = 6
+        '
+        'txt_SubTotal
+        '
+        Me.txt_SubTotal.Enabled = False
+        Me.txt_SubTotal.Location = New System.Drawing.Point(418, 37)
+        Me.txt_SubTotal.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_SubTotal.Name = "txt_SubTotal"
+        Me.txt_SubTotal.Size = New System.Drawing.Size(98, 20)
+        Me.txt_SubTotal.TabIndex = 5
+        '
+        'lbl_Totasl
+        '
+        Me.lbl_Totasl.AutoSize = True
+        Me.lbl_Totasl.Location = New System.Drawing.Point(376, 149)
+        Me.lbl_Totasl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_Totasl.Name = "lbl_Totasl"
+        Me.lbl_Totasl.Size = New System.Drawing.Size(34, 13)
+        Me.lbl_Totasl.TabIndex = 4
+        Me.lbl_Totasl.Text = "Total:"
+        Me.lbl_Totasl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl_Shipping
+        '
+        Me.lbl_Shipping.AutoSize = True
+        Me.lbl_Shipping.Location = New System.Drawing.Point(358, 113)
+        Me.lbl_Shipping.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_Shipping.Name = "lbl_Shipping"
+        Me.lbl_Shipping.Size = New System.Drawing.Size(51, 13)
+        Me.lbl_Shipping.TabIndex = 3
+        Me.lbl_Shipping.Text = "Shipping:"
+        Me.lbl_Shipping.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl_Tax
+        '
+        Me.lbl_Tax.AutoSize = True
+        Me.lbl_Tax.Location = New System.Drawing.Point(382, 75)
+        Me.lbl_Tax.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_Tax.Name = "lbl_Tax"
+        Me.lbl_Tax.Size = New System.Drawing.Size(28, 13)
+        Me.lbl_Tax.TabIndex = 2
+        Me.lbl_Tax.Text = "Tax:"
+        Me.lbl_Tax.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lbl_SubTotal
+        '
+        Me.lbl_SubTotal.AutoSize = True
+        Me.lbl_SubTotal.Location = New System.Drawing.Point(360, 37)
+        Me.lbl_SubTotal.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl_SubTotal.Name = "lbl_SubTotal"
+        Me.lbl_SubTotal.Size = New System.Drawing.Size(49, 13)
+        Me.lbl_SubTotal.TabIndex = 1
+        Me.lbl_SubTotal.Text = "Subtotal:"
+        Me.lbl_SubTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'lb_SelectedList
         '
         Me.lb_SelectedList.FormattingEnabled = True
-        Me.lb_SelectedList.ItemHeight = 25
-        Me.lb_SelectedList.Location = New System.Drawing.Point(16, 48)
+        Me.lb_SelectedList.Location = New System.Drawing.Point(8, 25)
+        Me.lb_SelectedList.Margin = New System.Windows.Forms.Padding(2)
         Me.lb_SelectedList.Name = "lb_SelectedList"
-        Me.lb_SelectedList.Size = New System.Drawing.Size(656, 404)
+        Me.lb_SelectedList.Size = New System.Drawing.Size(330, 212)
         Me.lb_SelectedList.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(720, 72)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 25)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Subtotal:"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(763, 145)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 25)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Tax:"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(715, 217)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(102, 25)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Shipping:"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(751, 287)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 25)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Total:"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(836, 72)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(192, 31)
-        Me.TextBox1.TabIndex = 5
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(836, 139)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(192, 31)
-        Me.TextBox2.TabIndex = 6
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(836, 217)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(192, 31)
-        Me.TextBox3.TabIndex = 7
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(836, 284)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(192, 31)
-        Me.TextBox4.TabIndex = 8
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(16, 458)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(201, 50)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Remove"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'frm_Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1082, 593)
+        Me.ClientSize = New System.Drawing.Size(541, 313)
         Me.Controls.Add(Me.gb_SelectedProducts)
         Me.Controls.Add(Me.mnuStrip_Main)
         Me.MainMenuStrip = Me.mnuStrip_Main
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frm_Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Shopping Cart By Tyle Hunt"
+        Me.Text = "Shopping Cart By Tyler Hunt"
         Me.mnuStrip_Main.ResumeLayout(False)
         Me.mnuStrip_Main.PerformLayout()
         Me.gb_SelectedProducts.ResumeLayout(False)
@@ -246,14 +262,15 @@ Partial Class frm_Main
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents gb_SelectedProducts As GroupBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents btn_Remove As Button
+    Friend WithEvents txt_Total As TextBox
+    Friend WithEvents txt_Shipping As TextBox
+    Friend WithEvents txt_Tax As TextBox
+    Friend WithEvents txt_SubTotal As TextBox
+    Friend WithEvents lbl_Totasl As Label
+    Friend WithEvents lbl_Shipping As Label
+    Friend WithEvents lbl_Tax As Label
+    Friend WithEvents lbl_SubTotal As Label
     Friend WithEvents lb_SelectedList As ListBox
+    Friend WithEvents tt_MainFrm As ToolTip
 End Class

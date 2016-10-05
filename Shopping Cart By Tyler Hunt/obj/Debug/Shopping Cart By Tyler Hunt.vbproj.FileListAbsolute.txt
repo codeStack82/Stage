@@ -12,3 +12,17 @@ Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyl
 Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_About.resources
 Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_AudioBooks.resources
 Z:\Developer\GitHub\VisualBasic\Shopping Cart By Tyler Hunt\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_PrintBooks.resources
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.exe.config
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.exe
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.xml
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.pdb
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.exe
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.pdb
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\bin\Debug\Shopping Cart By Tyler Hunt.xml
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.vbprojResolveAssemblyReference.cache
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_About.resources
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_AudioBooks.resources
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_Main.resources
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.frm_PrintBooks.resources
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping_Cart_By_Tyler_Hunt.Resources.resources
+C:\Users\thunt2\Documents\GitHub\Stage\Shopping Cart By Tyler Hunt\obj\Debug\Shopping Cart By Tyler Hunt.vbproj.GenerateResource.Cache
