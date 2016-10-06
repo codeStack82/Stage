@@ -3,7 +3,7 @@
     'Event to add selected items to the main form
     Private Sub btn_AddAudioBook_Sub_Click(sender As Object, e As EventArgs) Handles btn_AddAudioBook_Sub.Click
 
-        Dim index As Integer = lb_AudioBookItems_Sub.SelectedIndex                  'Get index value from Audio form list
+        Dim index As Integer = lb_AudioBookItems_Sub.SelectedIndex + 4                 'Get index value from Audio form list
         Dim selectedCost As Decimal                                                 'Holds added cost value
         Dim TextString = lb_AudioBookItems_Sub.SelectedItem                         'Get text string form form
 

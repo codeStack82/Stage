@@ -30,7 +30,7 @@
     'Method to remove selected items from main Listbox           <<<<<<<------/////////// TODO: Need to work on the delete order 
     Sub removeSelectedItem()
 
-        Dim itemIndex As Integer
+        Dim itemIndex As Integer = My.Forms.frm_Main.lb_SelectedList.SelectedIndex
 
         'Remove selected item from listBox in main form
         lb_SelectedList.Items.RemoveAt(itemIndex)
@@ -57,4 +57,14 @@
         Me.Close()
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim test As String
+
+        For Each num In gLst_SelectCostList
+            test += num & vbNewLine
+
+        Next
+
+        MsgBox(test)
+    End Sub
 End Class
