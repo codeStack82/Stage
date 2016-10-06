@@ -1,17 +1,11 @@
 ﻿Public Class frm_AudioBooks
-    Private Sub btn_AudioFrmClose_Sub_Click(sender As Object, e As EventArgs) Handles btn_AudioFrmClose_Sub.Click
-        Me.Close()
-    End Sub
 
-    Private Sub frm_AudioBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
+    'Event to add selected items to the main form
     Private Sub btn_AddAudioBook_Sub_Click(sender As Object, e As EventArgs) Handles btn_AddAudioBook_Sub.Click
 
-        Dim index = Me.lb_AudioBookItems_Sub.SelectedIndex                  'Get index value from Audio form list
-        Dim selectedCost As Decimal                                          'Holds added cost value
-        Dim TextString = Me.lb_AudioBookItems_Sub.SelectedItem              'Get text string form form
+        Dim index As Integer = lb_AudioBookItems_Sub.SelectedIndex                  'Get index value from Audio form list
+        Dim selectedCost As Decimal                                                 'Holds added cost value
+        Dim TextString = lb_AudioBookItems_Sub.SelectedItem                         'Get text string form form
 
         If index <> -1 Then
 
@@ -22,7 +16,9 @@
             selectedCost = gDec_PricesArray(index)
 
             'Add cost to List using the selected index from list
-            SelectCostList.Add(selectedCost)
+            gLst_SelectCostList.Add(selectedCost)
+        Else
+            MessageBox.Show("Sorry, You must select a value from the list!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand)
 
         End If
 
@@ -33,4 +29,10 @@
         updateCostSummary()
 
     End Sub
+
+    'Event to close form
+    Private Sub btn_AudioFrmClose_Sub_Click(sender As Object, e As EventArgs) Handles btn_AudioFrmClose_Sub.Click
+        Me.Close()
+    End Sub
+
 End Class

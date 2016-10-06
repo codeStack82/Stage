@@ -1,19 +1,12 @@
 ﻿Public Class frm_PrintBooks
-    Private Sub btn_PrintFrmClose_Sub_Click(sender As Object, e As EventArgs) Handles btn_PrintFrmClose_Sub.Click
 
-        Me.Close()
-    End Sub
-
-    Private Sub frm_PrintBooks_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
+    'Event to add selected items to the main form
     Private Sub btn_AddPrintBook_Sub_Click(sender As Object, e As EventArgs) Handles btn_AddPrintBook_Sub.Click
 
 
-        Dim index = Me.lb_PrintBookItems_Sub.SelectedIndex                  'Get index value from Print form list
-        Dim selectedCost As Decimal                                              'Holds added cost value
-        Dim TextString = Me.lb_PrintBookItems_Sub.SelectedItem              'Get text string form form
+        Dim index As Integer = lb_PrintBookItems_Sub.SelectedIndex                  'Get index value from Print form list
+        Dim selectedCost As Decimal                                                 'Holds added cost value
+        Dim TextString = lb_PrintBookItems_Sub.SelectedItem                         'Get text string form form
 
         If index <> -1 Then
 
@@ -24,7 +17,9 @@
             selectedCost = gDec_PricesArray(index)
 
             'Add cost to List using the selected index from list
-            SelectCostList.Add(selectedCost)
+            gLst_SelectCostList.Add(selectedCost)
+        Else
+            MessageBox.Show("Sorry, You must select a value from the list!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand)
 
         End If
 
@@ -36,13 +31,9 @@
 
     End Sub
 
-    Private Sub frm_PrintBooks_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        'gSng_index = My.Forms.frm_PrintBooks.lb_PrintBookItems_Sub.SelectedIndex
-
-        'MsgBox(gSng_index)
-
-        ' MsgBox(My.Forms.frm_PrintBooks.lb_PrintBookItems_Sub.SelectedIndex.ToString())
-        'MsgBox(My.Forms.frm_PrintBooks.lb_PrintBookItems_Sub.SelectedItem.ToString())
-
+    'Event to close form
+    Private Sub btn_PrintFrmClose_Sub_Click(sender As Object, e As EventArgs) Handles btn_PrintFrmClose_Sub.Click
+        Me.Close()
     End Sub
+
 End Class
